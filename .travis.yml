@@ -24,11 +24,9 @@ install:
   - composer global require drush/drush:7.*
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - cd ..
-  - drush make --concurrency=5 lightning/drupal-org-core.make drupal -y
-  - mkdir drupal/profiles/lightning
-  - cp -R lightning/* drupal/profiles/lightning/.
-  - cd drupal
-  - drush make --concurrency=5 profiles/lightning/drupal-org.make --no-core --contrib-destination=profiles/lightning  -y
+  - drush make --concurrency=5 lightning/build-lightning.make drupal -y
+  - echo ${PWD}
+  - ls
   - drush si lightning --db-url=mysql://root:@localhost/drupal -y
 
 before_script:
