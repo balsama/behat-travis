@@ -23,7 +23,6 @@ install:
   - phpenv rehash
   - composer global require drush/drush:7.*
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
-  - cd ..
   - drush make --concurrency=5 build-lightning.make drupal -y
   - drush si lightning --db-url=mysql://root:@localhost/drupal -y
 
