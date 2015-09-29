@@ -1,0 +1,62 @@
+name: Lightning
+type: profile
+description: 'A fast and feature-rich Drupal distribution.'
+core: 8.x
+distribution:
+  name: Lightning
+
+# Required modules
+dependencies:
+  # core
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - entity_reference
+  - help
+  - history
+  - image
+  - menu_ui
+  - node
+  - options
+  - path
+  - page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  # contrib
+  - layout_plugin
+  - config_update
+  - ctools
+  - diff
+  - embed
+  - entity_embed
+  - features
+  - features_ui
+  - metatag
+  - page_manager
+  - panels
+  - token
+  - views_field_view
+  # features
+  - lightning_features_content_types
+
+themes:
+  - bartik
+  - seven
+
