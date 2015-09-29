@@ -20,8 +20,8 @@ install:
   - echo 'max_execution_time = 120' >> drupal.php.ini;
   - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
   - phpenv config-add drupal.php.ini
+  - composer global require drush/drush:dev-master
   - phpenv rehash
-  - composer global require drush/drush:7.*
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - drush make --concurrency=5 build-lightning.make drupal -y
   - cd drupal
