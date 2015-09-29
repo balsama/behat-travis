@@ -42,9 +42,6 @@ install:
 before_script:
   - drush runserver --server=builtin 8080 &>/dev/null &
 
-script:
-  - drush le lightning_demo
-
 matrix:
   fast_finish: true
 
