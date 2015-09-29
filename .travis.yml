@@ -24,6 +24,7 @@ install:
   - composer global require drush/drush:7.*
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - drush make --concurrency=5 build-lightning.make drupal -y
+  - cd drupal
   - drush si lightning --db-url=mysql://root:@localhost/drupal -y
 
 before_script:
