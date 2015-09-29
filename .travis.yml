@@ -12,6 +12,8 @@ mysql:
 
 sudo: false
 
+before_install: cd project
+
 install:
   - composer self-update
   - composer --version
