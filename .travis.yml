@@ -46,8 +46,10 @@ before_script:
   - bash tests-setup.sh
   - pwd
   - ls
+  - behat
 
 script:
+  - ls
   - behat
 
 matrix:
