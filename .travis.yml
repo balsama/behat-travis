@@ -44,6 +44,8 @@ before_script:
   - mv ../tests ./tests
   - cd tests
   - bash tests-setup.sh
+  - pwd
+  - ls
 
 script:
   - behat
