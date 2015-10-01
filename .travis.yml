@@ -44,13 +44,9 @@ before_script:
   - mv ../tests ./tests
   - cd tests
   - bash tests-setup.sh
-  - pwd
-  - ls
-  - behat
 
 script:
-  - ls
-  - behat
+  - bin/behat
 
 matrix:
   fast_finish: true
