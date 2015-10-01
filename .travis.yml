@@ -42,6 +42,9 @@ install:
 before_script:
   - drush runserver --server=builtin 8080 &>/dev/null &
 
+script:
+  - behat
+
 matrix:
   fast_finish: true
 
