@@ -40,7 +40,7 @@ install:
   - drush si lightning --db-url=mysql://root:@localhost/drupal -y
 
 before_script:
-  - drush runserver --server=builtin 8080 &>/dev/null &
+  - drush runserver --default-server=builtin 8080 &>/dev/null &
   - mv ../tests ./tests
   - cd tests
   - bash tests-setup.sh
