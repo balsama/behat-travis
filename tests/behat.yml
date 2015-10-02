@@ -17,4 +17,6 @@ default:
       blackbox: ~
       drush:
         alias: self
+      drupal:
+        drupal_root: '../'
 
