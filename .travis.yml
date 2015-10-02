@@ -44,6 +44,7 @@ before_script:
   - mv ../tests ./tests
   - cd tests
   - bash tests-setup.sh
+  - cp behat.local.example.yml behat.local.yml
 
 script:
   - bin/behat
