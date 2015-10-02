@@ -18,4 +18,4 @@ default:
       drush:
         alias: self
       drupal:
-        drupal_root: '../'
+        drupal_root: '/drupal'
